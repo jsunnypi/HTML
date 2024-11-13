@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>타이밍 이벤트</title>
+  <style>
+    #circle {
+      width: 100px;
+      height: 100px;
+      background-color: lightcoral;
+      border-radius: 50%;
+      cursor: pointer;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: 1.5s;
+    }
+  </style>
+</head>
+<body>
+<div id="circle"></div>
+
+<script>
+  document.querySelector('#circle').onclick = function() {
+    setInterval(function() {
+        const maxX = window.innerWidth - 100;
+        const maxY = window.innerHeight - 100;
+
+      const randomX = Math.random() * maxX;
+      const randomY = Math.random() * maxY;
+
+      
+      document.querySelector('#circle').style.left = randomX + 'px';
+      document.querySelector('#circle').style.top = randomY + 'px';
+    }, 250);
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>getElementsByTagName()</title>
+   <!-- CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+<!-- 테마 -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+<!-- 자바스크립트 -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="btn-group" role="group">
+            <button type="button" class="btn btn-primary" onclick="alert('자바스크립트 코드를 직접 인력!')">인라인 JS 코드</button>
+            <button type="button" class="btn btn-success" onclick="myFunction();">인라인 함수 호출</button>
+            <button type="button" class="btn btn-danger">느슨한 연결 1</button>
+            <button type="button" class="btn btn-warning">느슨한 연결 2</button>
+        </div>
+    </div>
+
+    <script>
+        function myFunction(){
+            alert('HTML 요소의 이벤트 속성에서 myFunction() 호출')
+        }
+
+        document.querySelector('.btn-danger').onclick = function(){
+            alert('이벤트 핸들러')
+        }
+
+        document.querySelector('.btn-warning').addEventListener('click',function(){
+            alert('이벤트 리스너')
+        })
+    </script>
+</body>
+</html>

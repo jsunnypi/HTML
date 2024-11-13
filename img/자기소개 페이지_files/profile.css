@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+}
+ body{
+    font-family: "MaruBuri";
+    background-color: lemonchiffon;
+    height: 100%;
+    margin: 0;
+}
+
+li, p{
+    line-height: 2.0;
+    font-size: 1em;    
+    padding: 10px;
+}
+
+.container{
+    width: 900px;
+    height: 100%;
+    margin: 0 auto;
+    background-color: white;
+}
+
+#main{
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 1.2em;
+    width: 60%;
+    
+}
+
+#main section .subtitle{
+    margin: 12px;
+    
+}
+aside{
+    width: 35%;
+    margin: 0 auto;
+    background-color: skyblue;
+    float: left;
+    height: 100%;
+    margin-top: 0;
+    padding: 20px 20px;
+}
+
+.pf{
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px 2px #fff;
+}
+
+#main section{
+    padding: 20px;
+    border-bottom: 1px dotted black;
+    
+}
+
+.subtitle{
+    font-size: 1.5em;
+}
+
+#detail, #sns ul li{
+    list-style-type: square;}
+
+#sns ul li{
+    width: 80%;
+    padding: 10px;
+}
+
+aside #sns ul li {
+    text-decoration: none;
+}
+
+table{
+    border: 1px solid #222;
+            border-collapse: collapse; /*없으면 선이 두개씩 나타남*/
+            width: 60%;
+}
+
+thead{
+    background-color: #fff;
+    }
+
+th, td{
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+}
+

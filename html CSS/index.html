@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이진선의 홈페이지</title>
+</head>
+<body>
+    <a href="form.html"> 1. 폼태그 페이지 </a><br>
+
+
+
+
+
+   안 &nbsp;&nbsp;&nbsp; 녕하세요<br><br><br>  <!--br은 강제개행 한줄만-->
+   반갑습니다<br>
+   <a href="http://www.naver.com">네이버</a><br>        <!--네이버로 연결-->
+   <a href="http://imbc.com">MBC</a>
+   <hr>
+   <h1><i>헤드라인 글자</i></h1>
+   <h2>헤드라인 글자</h2>
+   <h3>헤드라인 글자</h3>
+   <h4>헤드라인 글자</h4>
+   <h5>헤드라인 글자</h5>
+   <h6>헤드라인 글자</h6>
+   <h7>헤드라인 글자</h7>
+   <hr>
+   <p>안녕하세요</p>
+   <p>반갑습니다.</p>
+   <p>어서와요</p>      <!--p는 문단단위로 띄우기-->
+   <hr>
+   <ruby>
+        <span>大韓民國 </span>
+        <rt>대한민국</rt>
+    
+   </ruby>
+   <hr>
+   <h1>내가 좋아하는 과일</h1>
+   <ul type="square">   <!--square 사각형 circle 속빈원 x:디폴트 원-->
+     <li>사과</li>
+     <li>배</li>
+     <li>딸기</li>
+  </ul>
+  <hr>
+  <h1>내가 좋아하는 도시</h1>
+  <ol type="I" start="10" reversed>  <!--I는 대문자 i는 소문자 로마숫자, start 숫자 지정가능, reversed start 숫자까지 거꾸로)-->
+    <li>서울</li>
+    <li>부산</li>
+    <li>대전</li>
+  </ol>
+  <hr>
+  <section>
+    <h2>Experience</h2>
+    <ul>
+        <li>
+            프론트엔드 개발
+            <ul>
+                <li>업무내용3</li>
+                <li>업무내용1</li>
+                <li>업무내용2</li>
+            </ul>
+        </li>
+    </ul>
+  </section>
+
+
+
+
+  <hr>
+  <h1>목록태그 / 정의태그</h1>
+  <dl>
+    <dt>HTML</dt>       <!--dt 제목 dd 설명-->
+    <dd>홈페이지 언어</dd>
+    <dd>재미있는 언어</dd>
+    
+    <dt>CSS</dt>
+    <dd>꾸미는 작업</dd>
+    <dd>더 재미있는 언어</dd>
+  </dl>
+  <hr>
+  <h1>테이블 만들기</h1>
+  <table border="5">        <!--border 셀 테두리 두께-->
+        <tr><!--tr행개수-->
+            <td>이름</td>       
+            <th>주소</th>       <!--th는 가운데정렬, 글씨 굵게-->
+            <td>전화번호</td>
+        </tr>
+        <tr>
+            <td>이진선</td>
+            <td>경기도 구리시</td>
+            <td>010-1234-5678</td>
+        </tr>
+  </table>
+  <hr>
+  <h2>테이블 연습</h2>
+  <table border="1">
+        <tr>
+            <td colspan="3">Table Data</td>
+            <!--colspan="n" : 열 n개 합침, 합쳐지는 것 삭제(작성x)-->
+            <td rowspan="3">Table Data </td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td rowspan="2">1</td>
+            <td>1</td>
+           
+        </tr>
+        <tr>
+            <td>1</td>
+           
+            <td>1</td>
+            
+        </tr>
+  </table>
+            <!--테이블 한 행씩 작성-->
+  <hr>
+  <table border="1">
+    <caption>테이블 연습</caption>    <!--caption을  table 밑으로 넣으면 자동으로 가운데 제목 정렬됨-->
+    <tr>
+        <th>방 이름</th>
+        <th>대상</th>
+        <th>크기</th>
+        <th>가격</th>
+    </tr>
+        
+    <tr>
+        <td>유채방</td>
+        <td>여성 도미토리</td>
+        <td rowspan="3">4인실</td>
+        <td rowspan="4">1인 20,000원</td>
+        
+    </tr>
+
+    <tr>
+        <td rowspan="2">동백방</td>
+        <td>동성 도미토리</td>
+        
+    </tr>
+        <td>가족 1팀</td>
+    <tr>
+        <td>천혜향방</td>
+        <td>-</td>
+        <td>2인실</td>
+    </tr>
+    
+    <tr>
+        <th colspan="4">바깥채 전체를 렌트합니다</td>
+    </tr>
+  </table>
+
+  <hr>
+  <a href="http://www.daum.net">
+     <img src="./img/logo_daum.png" width="150" height="200" alt="다음이미지">   <!--img는 폴더이름 뒤는 파일이름// 이미지 누르면 사이트 연결//.은 현재 내 기준 디렉토리, ..은 내 위위// alt는 이미지가 없을때 엑박 무엇인지 설명  있으면 이미지 그대로 뜸-->
+     <img src="logo_daum.png" width="150" height="200" alt="다음이미지">
+     <a href="http://www.daum.net"> 
+         <img src="https://t1.daumcdn.net/daumtop_deco/images/pctop/2023/logo_daum.png"> <!--이미지 저장 말고 이미지 주소 복사 해도 됨-->
+  </a>
+
+ <hr>
+ <audio controls autoplay>     <!--contols 재생바-->
+        <source src="./To.mp3" type="audio/mp3">
+ </audio>
+
+ <hr> 
+    <pre>       <!--작성한대로 보여줌-->
+    우리
+        나라
+            대한    민
+                            국
+</pre>
+
+<hr>
+<mark>홈페이지</mark>
+<hr>
+<img src="./img/1.jpg" alt="서울시 관광지도" usemap="#eventMap">
+<map name="eventMap">
+    <area shape="rect" coords="460,300,650,485" href="http://www.naver.com"     
+    target="_blank">        <!--_blank 새페이지 띄우기 /// coords 그림판에서 대각선 점찍고 좌표잡고 영역잡기--> 
+
+    <area shape="rect" coords="1050, 700, 1190, 830" href="http://www.google.com" target="_blank">
+</map>
+
+
+
+
+</body>
+</html>

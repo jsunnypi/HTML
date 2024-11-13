@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>버튼으로 폰트 사이즈 조절</title>
+</head>
+<body>
+    <button id="up" onclick="up()">+</button>
+    <button id="down" onclick="down()">-</button>
+    <br>
+    <div id="result">안녕하세요</div>
+
+    <script>
+        var size = 32;
+        function up(){
+            size = size + 4;
+            var txt = document.querySelector('#result');
+            txt.style = "font-size:" + size + "px"
+        }
+
+        function down(){
+            size = size - 4;
+            var txt = document.querySelector('#result');
+            txt.style = "font-size:" + size + "px"
+        }
+    </script>
+</body>
+</html>

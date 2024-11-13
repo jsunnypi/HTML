@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      /*  h1 ~ h2 {
+            color: red;
+        }
+        h1:hover{
+            color: blue;
+        }<!--hover 커서 닿으면 색 바꾸기-->
+        */
+
+        h1:first-of-type{
+            color:red;
+        }
+        h1:last-of-type
+        {
+            color: blue;
+        }
+
+        p::first-letter{
+            font-size: 48px;
+        }
+
+        p::first-line{
+            color: red;
+        }
+       /* p{counter-increment: rint;}
+       
+        p::before { content: counter(rint) ".";}
+        p::after{content:"-" attr(data-page)"page";}*/
+        p::first-letter{font-size: 48px;  }
+            
+        p::selection{
+            background: black;
+            color: red;
+        }
+
+      /*  a{
+            text-decoration: none; /*none 링크 밑줄 없애기
+        }
+        a:link::after{content:"-" attr(href);}
+        /*.a{display: none;}*/
+        .a{visibility: hidden;} /*visibility hidden은 영역은 잡히지만 보이지 않게 하는 것 display none은 영역도 안잡힘*/
+
+        #aa{
+            background-color: black;
+            color: white;
+            opacity: 0.2; /*opacity 불투명도 0~1*/
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML5</h1>
+    <h2>HTML5</h2>
+    <h3>HTML5</h3>
+    <h3>HTML5</h3>
+    <h2>HTML5</h2>
+    <h1>HTML5</h1>
+    <h1>HTML5</h1>
+    <h2>HTML5</h2>
+
+    <p data-page="52">
+        For weeks, the roads around Islamabad have been lined by shipping containers; road blocks ready for immediate deployment in the event of any protest.
+Pakistan’s capital has become used to entire areas being sealed off whenever the authorities get an inkling that unrest could be brewing. It is a constant reminder to the city’s residents that at any moment, everything could tip.
+    </p>
+    <p>
+        For weeks, the roads around Islamabad have been lined by shipping containers; road blocks ready for immediate deployment in the event of any protest.
+Pakistan’s capital has become used to entire areas being sealed off whenever the authorities get an inkling that unrest could be brewing. It is a constant reminder to the city’s residents that at any moment, everything could tip.
+    </p>
+    <p>
+        For weeks, the roads around Islamabad have been lined by shipping containers; road blocks ready for immediate deployment in the event of any protest.
+Pakistan’s capital has become used to entire areas being sealed off whenever the authorities get an inkling that unrest could be brewing. It is a constant reminder to the city’s residents that at any moment, everything could tip.
+    </p>
+    <p>
+        For weeks, the roads around Islamabad have been lined by shipping containers; road blocks ready for immediate deployment in the event of any protest.
+Pakistan’s capital has become used to entire areas being sealed off whenever the authorities get an inkling that unrest could be brewing. It is a constant reminder to the city’s residents that at any moment, everything could tip.
+    </p>
+
+    <hr>
+    <h3><a href="http://www.naver.com">네이버</a></h3>
+    <h3><a href="http://www.daum.net">다음</a></h3>
+    <div class="a">1</div>
+    <div id="aa">2</div>
+    <div class="a">3</div>
+    <div>4</div>
+</body>
+</html>

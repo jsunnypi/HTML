@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>폼 형식</h1>
+    <form>
+        <fieldset>      <!--묶어주기-->
+            <legend>기본입력</legend> <!--묶음 이름-->
+        아이디 : <input type="text" value="hello" readonly><br>     <!--값을 읽기만 가능, 수정 불가-->
+        이름 : <input type="text" placeholder="꼭 영문으로 기재해 주세요" required ><br>
+        비밀번호 : <input type="password"><br>
+        파일첨부 : <input type="file"><br>
+        </fieldset>
+        <fieldset>
+            <legend>선택사항</legend>
+                     색깔 선택 : <input type="color"><br>
+                     날짜 : <input type="date"><br>
+                     날짜 상세히 : <input type="datetime-local"><br>
+                     이메일 : <input type="email"><br>
+                     전화번호 : <input type="tel"><br>
+                     해당월 입력 : <input type="month"><br>
+                     해당주 입력 : <input type="week"><br>
+                     시간 입력 : <input type="time"><br>
+                     url 입력 : <input type="url"><br>
+                     숫자세기 : <input type="number"><br>
+                     검색 : <input type="search"><br>
+        </fieldset>
+        <input type="submit" value="제출">
+    </form>
+    <br>
+    <form>
+        <textarea rows="6" cols="80"></textarea>
+        <br>
+
+        선택 :
+        <select multiple>
+            <option>김밥</option>
+            <option>라면</option>
+            <option>떡볶이</option>
+            <option>순대</option>
+            <option>어묵</option>
+        </select>
+        <br>
+        <select>
+            <optgroup label="프론트">
+                <option>HTML</option>
+                <option>CSS</option>
+                <option>Java Script</option>
+            </optgroup>
+            <optgroup label="백엔드">
+                <option>Pathon</option>
+                <option>Java</option>
+                <option>C##</option>
+            </optgroup>
+        </select>
+    </form>
+    <br>
+    <form>
+        <h3>수강 분야(수강 선택)</h3>
+        <ul>
+            <li><input type="checkbox">문법</li>
+            <li><input type="checkbox">작문</li>
+            <li><input type="checkbox">독해</li>
+        </ul>
+
+        <h3>수강 분야(수강 선택)</h3>
+        <ul>
+            <label><li><input type="checkbox">문법</li></label>
+            <label><li><input type="checkbox">작문</li></label>
+            <label><li><input type="checkbox">독해</li></label> <!--label 텍스트 범위까지 클릭 가능 필수,,-->
+        </ul>
+    </form>
+<hr>
+<h3>140p 1분 복습</h3>
+    <h3>회원가입</h3>
+    <form>
+        <fieldset>
+            <legend>
+                필수정보
+            </legend>
+            이름 : <input type="text"><br>
+        </fieldset>
+        <fieldset>
+            <legend>
+                선택 정보
+            </legend>
+            생일 : <input type="date"><br>
+        </fieldset>
+    </form>
+    <hr>
+    <form>
+        <h1>상품 주문서</h1>
+        <fieldset>
+            <legend>개인 정보</legend>
+            <ul>
+                <li>이름 <input type="text" placeholder="여백 없이 입력" required></li>
+                <li>연락처 <input type="tel" placeholder="연락 가능한 번호"></li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>
+                배송지 입력
+            </legend>
+            <ul>
+                <li> 주소 <input type="text"></li>
+                <li> 전화번호 <input type="tel"></li>
+                <li> 메모 <textarea rows="10" cols="50"></textarea>
+                </li>
+            </ul>
+        </fieldset>
+
+        <fieldset>
+            <legend> 주문 정보</legend>
+            <ul>
+             <li><input type="checkbox">과테말라 <input type="number">개</li>
+             <li><input type="checkbox">인도네시아 <input type="number">개</li>
+             <li><input type="checkbox">블렌딩 <input type="number">개</li>
+        </fieldset>
+        <input type="submit" value="주문하기">
+        <input type="reset" value="다시 작성">
+    </form>
+</body>
+</html>

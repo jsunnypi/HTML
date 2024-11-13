@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .box{
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            position: absolute; /*절대위치 화면 기준으로 이동*//*겹쳐지면 마지막 div만 보임*/
+       }
+        
+
+       .red{
+        background-color: red;
+        left: 20px;
+        top: 10px;
+        z-index: 100;   /*z-index 높을수록 위로*/
+       }
+       .green{
+        background-color: green;
+        left: 50px;
+        top: 50px;
+        z-index: 50;
+       }
+       .blue{
+        background-color: blue;
+        left: 90px;
+        top: 90px;
+        z-index: 40;
+       }
+
+       body > div{
+        width: 400px;
+        height: 100px;
+        border : 3px solid black;
+        position: relative; /*relative 부모 기준으로 absolute 이동*/
+        overflow: scroll; /*부모영역 벗어나면 숨기기hidden 스크롤해서 보여주기 scroll*/
+       }
+
+    </style>
+
+
+</head>
+<body>
+    <h1>Lorm ipsum dolor amet</h1>
+    <div>
+        <div class="box red">
+        
+        </div>
+        <div class="box green">
+
+        
+         </div>
+
+        <div class="box blue">
+        
+        </div>
+    </div>
+    <h1>Lorm ipsum dolor amet</h1>
+
+
+
+
+</body>
+</html>

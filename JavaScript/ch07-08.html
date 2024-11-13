@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>체크 박스 (타이머)</title>
+    <script>
+        document.addEventListener('DOMContentLoaded',()=>{
+            let[timer, timerId, sec, secId] = [0, 0, 0, 0]
+            const h1 = document.querySelector('h1')
+            const checkbox = document.querySelector('input')
+            //const h5 = document.querySelector('h5')
+
+            checkbox.addEventListener('change', (event)=>{
+                if(event.currentTarget.checked){
+                    timerId = setInterval(()=>{
+                        timer += 1
+                        h1.textContent = `${timer}초`
+                    }, 1000)
+                  /*  secId = setInterval(()=>{
+                        sec += 1
+                        h5.textContent = `.${sec}`
+                    }, 10)*/
+                    }
+                else{
+                    clearInterval(timerId)
+                    //clearInterval(secId)
+                }
+                })
+            })
+    </script>
+</head>
+<body>
+    <input type="checkbox">
+    <span>타이머 활성화</span>
+    <h1></h1>
+</body>
+</html>

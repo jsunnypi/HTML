@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>체크박스 결과 보기</title>
+</head>
+<body>
+    취미
+    <ul>
+        <li>
+            <span>야구</span>
+            <input type="checkbox" name="hobby" value="야구"></li>
+        <li>
+            <span>농구</span>
+            <input type="checkbox" name="hobby" value="농구"></li>
+        <li>
+            <span>게임</span>
+            <input type="checkbox" name="hobby" value="게임"></li>
+    </ul>
+   
+    <button onclick="show()">결과 보기</button>
+    <br>
+    결과값: <div id="result"></div>
+    <script type="text/javascript">
+        function show(){
+            var arr = document.querySelectorAll("input[name='hobby']");
+            var str = '';
+            for(var i = 0; i < arr.length; i++){
+                var c = arr[i];
+                if(c.checked){
+                    str += c.value + "<br>";
+                }
+            }
+            document.getElementById('result').innerHTML = "<h1>" + str + "</h1>"
+        }
+    </script>
+</body>
+</html> 

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const a = Number(prompt('월을 입력해주세요.','1~12'))
+
+        if(a<3||a==12){
+            alert(`${a}월은 겨울`)
+        }
+        else if(3<=a && a<6){
+            alert(`${a}월은 봄`)
+        }
+        else if(6<=a<9){
+            alert(`${a}월은 여름`)
+        }
+        else{
+            alert(`${a}월은 가을`)
+        }
+       
+    </script>
+</body>
+</html>

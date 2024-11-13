@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폰트 크기 선택</title>
+</head>
+<body>
+    글꼴 크기
+    <select onchange="fontSize(this.value)">
+        <option value="16px">16px</option>
+        <option value="32px">32px</option>
+        <option value="40px">40px</option>
+        <option value="56px">56px</option>
+    </select>
+
+    <div id="result">안녕하세요</div>
+
+    <script type="text/javascript">
+        function fontSize(v){
+            var result = document.querySelector('#result')
+            result.style = "font-size:" + v;
+        }
+
+    </script>
+</body>
+</html>
